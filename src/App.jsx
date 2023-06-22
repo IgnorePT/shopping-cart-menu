@@ -1,10 +1,7 @@
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 
 //Arquitectura de um componente
-//Funcão - Retorna JSX
-
-
-//PascalCase
+//Regra Para nomear Componentes usar PascalCase
 function App() {
 	//Logica do componente
 
@@ -16,6 +13,7 @@ function App() {
 	);
 }
 
+//É necessario exportar o component para poder ser utizado noutras partes da aplicação
 export default App;
 
 //Class Components
