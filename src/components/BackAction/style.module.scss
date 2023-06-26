@@ -1,52 +1,13 @@
-$varivel: "$f3f3f3"
-
-	.wrapper {
+.wrapper {
 	padding: 0 0 24px;
-	border-bottom: 1.5px solid $varivel;
+	border-bottom: 1.5px solid #d0cfcf;
 
-	.wrapper-cenas {
+	.a {
 		display: flex;
 		align-items: center;
 		font-weight: 600;
 		font-size: 18px;
-
-		.wrapper-cenas_red {
-			background-color: red;
-		}
+		background-color: red;
 	}
 
-	h3 {}
-
-	&.wrapper_blue {
-		background-color: blue;
-
-		.wrapper-cenas {
-			color: $varivel;
-		}
-	}
-}
-
-.wrapper {}
-
-.wrapper h3 {}
-
-.wrapper.wrapper_blue {}
-
-.wrapper.wrapper_blue .wrapper-cenas {}
-
-.wrapper .wrapper-cenas {}
-
-.wrapper .wrapper-cenas .wrapper-cenas_red {}
-
-<div class="wrapper"><div class="wrapper-cenas"><div class="wrapper-cenas-red"></div></div></div><div class="wrapper wrapper_blue"><div class="wrapper-cenas"><div class="wrapper-cenas-red"></div></div></div>.a {
-	display: flex;
-	align-items: center;
-	font-weight: 600;
-	font-size: 18px;
-	background-color: red;
-}
-
-.h3 {
-	color: red;
-	font-size: 20px;
 }
