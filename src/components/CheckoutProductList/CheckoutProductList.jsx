@@ -1,8 +1,9 @@
 import ProductItem from "./ProductItem/ProductItem";
 import "./style.css";
-import Pizza1 from "../../assets/images/pizza_1.png";
-import Pizza2 from "../../assets/images/pizza_2.png";
-import Rice from "../../assets/images/rice.png";
+
+import pizza1 from "../../assets/images/pizza_1.png";
+import pizza2 from "../../assets/images/pizza_2.png";
+import riceImg from "../../assets/images/rice.png";
 
 const CheckoutProductList = () => {
 	return (
@@ -10,21 +11,21 @@ const CheckoutProductList = () => {
 			<ProductItem
 				name="Italy Pizza"
 				price={881}
-				image={Pizza1}
+				image={pizza1}
 				description="Extra cheese and toping"
 				quantity={2}
 			/>
 			<ProductItem
 				name="Combo Plate"
 				price={887}
-				image={Pizza2}
+				image={pizza2}
 				description="Extra cheese and toping"
 				quantity={1}
 			/>
 			<ProductItem
 				name="Spanish Rice"
 				price={981}
-				image={Rice}
+				image={riceImg}
 				description="Extra garllic"
 				quantity={1}
 			/>
