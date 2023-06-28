@@ -1,36 +1,62 @@
 import ProductItem from "./ProductItem/ProductItem";
 import "./style.css";
 
-import pizza1 from "../../assets/images/pizza_1.png";
-import pizza2 from "../../assets/images/pizza_2.png";
-import riceImg from "../../assets/images/rice.png";
+import { IMAGE_URL } from "../../constants/constants";
+
+const data = [
+	{
+		id: 1,
+		name: "Italy Pizza",
+		price: 881,
+		image: "pizza_1.png",
+		description: "Extra cheese and toping",
+		quantity: 2,
+	},
+	{
+		id: 2,
+		name: "Combo Plate",
+		price: 887,
+		image: "pizza_2.png",
+		description: "Extra cheese and toping",
+		quantity: 1,
+	},
+	{
+		id: 3,
+		name: "Spanish Rice",
+		price: 981,
+		image: "rice.png",
+		description: "Extra garllic",
+		quantity: 1,
+	},
+];
 
 const CheckoutProductList = () => {
 	return (
 		<ul className="checkout-product-list">
-			<ProductItem
-				name="Italy Pizza"
-				price={881}
-				image={pizza1}
-				description="Extra cheese and toping"
-				quantity={2}
-			/>
-			<ProductItem
-				name="Combo Plate"
-				price={887}
-				image={pizza2}
-				description="Extra cheese and toping"
-				quantity={1}
-			/>
-			<ProductItem
-				name="Spanish Rice"
-				price={981}
-				image={riceImg}
-				description="Extra garllic"
-				quantity={1}
-			/>
+			{data.map((product) => (
+				<ProductItem
+					key={product.id}
+					name={product.name}
+					price={product.price}
+					image={`${IMAGE_URL}${product.image}`}
+					description={product.description}
+					quantity={product.quantity}
+				/>
+			))}
 		</ul>
 	);
 };
 
 export default CheckoutProductList;
+
+// const aarray2 = [];
+
+// for (let i = 0; i < 3; i++) {
+// 	aarray2.push(React.createElement("li"));
+// }
+
+// React.createElement("ul", {}, [
+// 	...aarray2,
+// 	React.createElement("li"),
+// 	React.createElement("li"),
+// ]);
