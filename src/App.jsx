@@ -1,4 +1,5 @@
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
+import "./App.css";
 
 //Arquitectura de um componente
 //Regra Para nomear Componentes usar PascalCase

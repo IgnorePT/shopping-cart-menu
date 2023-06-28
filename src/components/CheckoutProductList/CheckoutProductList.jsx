@@ -3,37 +3,12 @@ import styles from "./style.module.scss";
 
 import { IMAGE_URL } from "../../constants/constants";
 
-const data = [
-	{
-		id: 1,
-		name: "Italy Pizza",
-		price: 881,
-		image: "pizza_1.png",
-		description: "Extra cheese and toping",
-		quantity: 2,
-	},
-	{
-		id: 2,
-		name: "Combo Plate",
-		price: 887,
-		image: "pizza_2.png",
-		description: "Extra cheese and toping",
-		quantity: 1,
-	},
-	{
-		id: 3,
-		name: "Spanish Rice",
-		price: 981,
-		image: "rice.png",
-		description: "Extra garllic",
-		quantity: 1,
-	},
-];
-
-const CheckoutProductList = () => {
+//Renderizaçao Condicional
+//
+const CheckoutProductList = ({ products }) => {
 	return (
 		<ul className={styles["checkout-product-list"]}>
-			{data.map((product) => (
+			{products.map((product) => (
 				<ProductItem
 					key={product.id}
 					name={product.name}

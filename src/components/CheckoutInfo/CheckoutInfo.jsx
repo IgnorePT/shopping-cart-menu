@@ -1,7 +1,7 @@
 import CheckoutProductList from "../CheckoutProductList/CheckoutProductList";
 import styles from "./style.module.scss";
 
-const CheckoutInfo = () => {
+const CheckoutInfo = ({ products }) => {
 	return (
 		<div className={styles["checkout-product-info"]}>
 			<div className={styles["head-checkout-info"]}>
@@ -9,7 +9,7 @@ const CheckoutInfo = () => {
 				<p>You have 3 item in your cart</p>
 			</div>
 
-			<CheckoutProductList />
+			<CheckoutProductList products={products} />
 		</div>
 	);
 };
