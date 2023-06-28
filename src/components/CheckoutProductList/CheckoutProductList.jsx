@@ -1,5 +1,5 @@
 import ProductItem from "./ProductItem/ProductItem";
-import "./style.css";
+import styles from "./style.module.scss";
 
 import { IMAGE_URL } from "../../constants/constants";
 
@@ -32,7 +32,7 @@ const data = [
 
 const CheckoutProductList = () => {
 	return (
-		<ul className="checkout-product-list">
+		<ul className={styles["checkout-product-list"]}>
 			{data.map((product) => (
 				<ProductItem
 					key={product.id}

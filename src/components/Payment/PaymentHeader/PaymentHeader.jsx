@@ -1,9 +1,10 @@
 import user from "../../../assets/images/user.png";
+import styles from "./style.module.scss";
 
 function PaymentHeader() {
 	return (
-		<div>
-			<h3>CardDetails</h3>
+		<div className={styles.paymentHeader}>
+			<h3>Card Details</h3>
 			<img src={user} />
 		</div>
 	);

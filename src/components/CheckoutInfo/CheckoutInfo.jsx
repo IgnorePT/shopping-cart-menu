@@ -1,10 +1,10 @@
 import CheckoutProductList from "../CheckoutProductList/CheckoutProductList";
-import "./style.css";
+import styles from "./style.module.scss";
 
 const CheckoutInfo = () => {
 	return (
-		<div className="checkout-product-info">
-			<div className="head-checkout-info">
+		<div className={styles["checkout-product-info"]}>
+			<div className={styles["head-checkout-info"]}>
 				<h3>Shopping cart</h3>
 				<p>You have 3 item in your cart</p>
 			</div>

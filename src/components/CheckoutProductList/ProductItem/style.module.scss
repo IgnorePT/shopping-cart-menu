@@ -1,0 +1,32 @@
+.productItem {
+	display: grid;
+	grid-template-columns: 80px 3fr 38px 1fr 25px;
+	align-items: center;
+	gap: 20px;
+	padding: 9px 30px 9px 10px;
+	background: #ffffff;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+
+	input {
+		font-size: 20px;
+		border: none;
+	}
+
+	button {
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		border: none;
+		cursor: pointer;
+	}
+
+	span {
+		font-size: 14px;
+		font-weight: 500;
+
+		&.price {
+			font-family: "Nunito", sans-serif;
+		}
+	}
+}
