@@ -3,8 +3,6 @@ import styles from "./style.module.scss";
 
 import { IMAGE_URL } from "../../constants/constants";
 
-//Renderizaçao Condicional
-//
 const CheckoutProductList = ({ products }) => {
 	return (
 		<ul className={styles["checkout-product-list"]}>
