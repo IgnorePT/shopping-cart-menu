@@ -5,7 +5,7 @@ import "./App.css";
 //Regra Para nomear Componentes usar PascalCase
 function App() {
 	//Logica do componente
-
+	console.log("Renderizou!");
 	// Obrigatoriamente retornar JSX
 	return (
 		<>
