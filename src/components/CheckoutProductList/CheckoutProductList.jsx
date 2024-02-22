@@ -13,7 +13,7 @@ const CheckoutProductList = ({ products }) => {
 					price={product.price}
 					image={`${IMAGE_URL}${product.image}`}
 					description={product.description}
-					quantity={product.quantity}
+					quantity={2}
 				/>
 			))}
 		</ul>
@@ -21,15 +21,3 @@ const CheckoutProductList = ({ products }) => {
 };
 
 export default CheckoutProductList;
-
-// const aarray2 = [];
-
-// for (let i = 0; i < 3; i++) {
-// 	aarray2.push(React.createElement("li"));
-// }
-
-// React.createElement("ul", {}, [
-// 	...aarray2,
-// 	React.createElement("li"),
-// 	React.createElement("li"),
-// ]);

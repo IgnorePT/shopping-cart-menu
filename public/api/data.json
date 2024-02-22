@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Italy Pizza",
         "price": 881,
-        "image": "pizza_1.png",
+        "image": "/assets/pizza_1.png",
         "description": "Extra cheese and toping",
         "quantity": 2
     },

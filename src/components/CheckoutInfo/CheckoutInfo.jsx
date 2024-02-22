@@ -2,27 +2,13 @@ import CheckoutProductList from "../CheckoutProductList/CheckoutProductList";
 import styles from "./style.module.scss";
 
 const CheckoutInfo = ({ products }) => {
-	const getTotalItemsCount = (products) => {
-		let total = 0;
-
-		//FOr
-		// for (let i = 0; i < products.length; i++) {
-		// 	total += products[i].quantity;
-		// }
-
-		//Reduce
-		total = products.reduce((accumulator, currentValue) => {
-			return currentValue.quantity + accumulator;
-		}, 0);
-
-		return total;
-	};
-
+	const totalPrice = products.reduce((acc, product) => acc + product.price, 0);
 	return (
 		<div className={styles["checkout-product-info"]}>
 			<div className={styles["head-checkout-info"]}>
 				<h3>Shopping cart</h3>
-				<p>You have {getTotalItemsCount(products)} item in your cart</p>
+				<p>You have {products.length} item in your cart</p>
+				<p>You have {totalPrice}€ in products</p>
 			</div>
 
 			<CheckoutProductList products={products} />
